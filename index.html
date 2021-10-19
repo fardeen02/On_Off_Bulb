@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bulb_On_Off</title>   
+<style>
+   *{
+       text-align: center;
+       background-color: black;
+   }
+   h1{
+        color: cyan;
+        font-size: 3rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    p{
+        color: yellow;
+        font-size: 2rem;
+        text-align:center;
+    }
+      
+    .bt{
+        font-size: 1.5rem;
+        color: black;
+        background-color:yellow;
+        border: none;
+    }
+    
+
+</style> 
+</head>
+<body>
+    <h1>Switch On/off</h1>
+    <p>To Turn The Bulb On/Off</p>
+<button class="bt" type="button" onclick="changeImage1()">Switch On</button>
+<img id="myImage" src="../On_Off_Bulb/offBulb.jpg">
+<button class="bt" type="button" onclick="changeImage2()">Switch Off</button>
+
+<script>
+function changeImage1() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("../On_Off_Bulb/offBulb.jpg")) {
+    image.src = "../On_Off_Bulb/onBulb.jpg";
+  }
+}
+
+function changeImage2() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("../On_Off_Bulb/onBulb.jpg")) {
+    image.src = "../On_Off_Bulb/offBulb.jpg";
+  }
+}
+
+</script>
+
+</body>
+</html>
